@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="LogInPage" >
+            <div class="Inner my-5 p-5 text-center mx-auto w-75">
+                <h1>Smart Login System</h1>
+                <form>
+                    <input type="text" id="loginMail" placeholder="Enter your email" class="form-control my-3 bg-transparent text-white">
+                    <input type="password" id="loginPass" placeholder="Enter your password" class="form-control my-3 bg-transparent text-white">
+                    <p id="incorrect" class="d-none text-danger">incorrect mail or password </p>
+                    <p id="loginFail" class="d-block text-danger"></p>
+                    <button type="button" id="login" onclick="enter()" class="btn btn-outline-primary w-100 mt-3">Login</button>
+                </form>
+                <p class="d-inline-block">Don’t have an account?</p>
+                <span class="link"> <a href="#" id="signUp">Sign Up</a></span>
+            </div>
+        </div>
+        <div id="signUpPage">
+            <div class="Inner my-5 p-5 text-center mx-auto w-75">
+                <h1>Smart Login System</h1>
+                <form>
+                    <input type="text" id="signUpName" placeholder="Enter your name" class="form-control my-3 bg-transparent text-white">
+                    <input type="text" id="signUpMail" placeholder="Enter your email" class="form-control my-3 bg-transparent text-white">
+                    <input type="password" id="signUpPass" placeholder="Enter your password" class="form-control my-3 bg-transparent text-white">
+                    <p id="signUpSucces" class="d-none">Succes</p>
+                    <p id="signUpFail" class="d-none text-danger">All inputs is required </p>
+                    <p id="signUpExist" class="d-none text-danger">email already exists </p>
+                    <button type="button" id="signUp" onclick="addAccount()" class="btn btn-outline-primary w-100 mt-3">Sign Up</button>
+                </form>
+                <p class="d-inline-block">You have an account?</p>
+                <span class="link"> <a id="signIn" href="#">Sign in</a></span>
+            </div>
+        </div>
+    </div>
+    <div id="homePage" class="vh-100">
+        <nav class="navbar fixed-top navbar-expand-lg w-100 navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">SMART LOGIN</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex ms-auto" role="search">
+                        <button class="btn btn-outline-warning" id="logOut" type="button">Logout</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="Inner my-5 p-5 text-center m-auto w-60" id="demo">
+            <h1>Welcome User</h1>
+        </div>
+    </div>
+<script src="JS/index.js"></script>
+</body>
+
+
+</html>
